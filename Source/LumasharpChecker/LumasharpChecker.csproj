@@ -11,10 +11,10 @@
     <UseWPF>true</UseWPF>
 	<PublishSingleFile>false</PublishSingleFile>
 	<GeneratePackageOnBuild>False</GeneratePackageOnBuild> <!-- 可选：生成单个文件 -->
-	<Version>3.0.0.0</Version>
-	<AssemblyVersion>3.0.0.0</AssemblyVersion>
-	<FileVersion>3.0.0.0</FileVersion>
-	<InformationalVersion>3.0.0.0</InformationalVersion>
+	<!-- Product release uses SemVer; Windows and CLR metadata use four-part versions. -->
+	<Version>2.0.0</Version>
+	<AssemblyVersion>2.0.0.1</AssemblyVersion>
+	<FileVersion>2.0.0.1</FileVersion>
 	<ApplicationIcon>Icons\CyntecAppIcon.ico</ApplicationIcon>
 	<Product>$(AssemblyName)</Product>
   </PropertyGroup>
@@ -32,7 +32,7 @@
     <Copy SourceFiles="@(_LocatorFiles)" DestinationFolder="$(PublishDir)NativeR3" SkipUnchangedFiles="true" Condition="'$(PublishDir)' != ''" />
   </Target>
 
-  <!-- v2 is CPU-only: vendor AI Runtime is deliberately not deployed. -->
+  <!-- The V3 deployment deliberately excludes the vendor AI Runtime. -->
 
   <ItemGroup>
     <Content Include="Icons\CyntecAppIcon.ico" />

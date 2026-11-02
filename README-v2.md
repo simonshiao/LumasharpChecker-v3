@@ -1,6 +1,10 @@
-# LumasharpChecker v2（非 AI 版）
+# LumasharpChecker v2（非 AI 版／未交付開發版）
 
-目前版本：2.0.0.1 / .NET Framework 4.7.2 / x64；以 LumasharpChecker 1.0.0.69 為基礎建立。
+開發版當時專案欄位：2.0.0.1 / .NET Framework 4.7.2 / x64；以 LumasharpChecker 1.0.0.69 為基礎建立。此 V2 版本只供內部開發，未交付產線。
+
+## 版本規則補註（2026-11-02）
+
+V2 的 `2.0.0.1` 是未交付的內部開發編號，不是正式發行版。依目前規則，保留操作流程的 .NET Framework 4.7.2 移植記為 `1.0.1.1`；完整介面與操作流程重製後，第一個正式版候選記為產品版 `2.0.0`、Windows／組件版 `2.0.0.1`。此補註不改寫 V2 原始提交歷史。
 
 - 開啟「啟動v2.vbs」；固定執行 App/LumasharpChecker.exe。
 - Source 保留目前原始碼；App 是獨立可攜執行目錄，包含既有 Recipe、Profile、設定與樣本快取的副本。
